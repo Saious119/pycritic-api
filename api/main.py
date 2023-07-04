@@ -3,7 +3,7 @@ import urllib
 from urllib.parse import unquote
 import json
 import os
-import api.pycritic
+import api.pycritic as pycritic
 
 app = Flask(__name__)
 
