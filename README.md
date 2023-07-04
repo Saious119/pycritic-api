@@ -4,7 +4,7 @@ This is a simple Flask API to wrap the pycritic scrapper in
 
 ## How to use
 
-start up the api with ```python main.py```
+start up the api with ```vercel dev```
 
 The app is also hosted with vercel at https://pycritic-api.vercel.app
 
@@ -21,6 +21,7 @@ This API will return a json string with properties: name, release date, category
 ## Requirements
 
 - python 3.9 or higher
+- vercel (npm -i vercel)
 - Flask (pip install flask)
 - urllib (pip install urllib)
 - json (pip install json)
