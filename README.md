@@ -3,16 +3,21 @@
 This is a simple Flask API to wrap the pycritic scrapper in
 
 ## How to use
+
 start up the api with ```python app.py```
 
 make requests with your app or api tester (I use Insomnia) and hit an endpoint!
-options are: 
-- '/game/<platform>/<name>'
-- '/game/metaurl/<url>'
+
+options are:
+
+- ```/game/<platform>/<name>```
+  
+- ```/game/metaurl/<url>```
 
 This API will return a json string with properties: name, release date, category, metacritic score, user score, and description
 
 ## Requirements
+
 - python 3.9 or higher
 - Flask (pip install flask)
 - urllib (pip install urllib)
