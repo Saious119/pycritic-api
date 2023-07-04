@@ -4,7 +4,7 @@ This is a simple Flask API to wrap the pycritic scrapper in
 
 ## How to use
 
-start up the api with ```python app.py```
+start up the api with ```python main.py```
 
 make requests with your app or api tester (I use Insomnia) and hit an endpoint!
 
