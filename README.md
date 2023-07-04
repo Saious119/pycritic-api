@@ -6,6 +6,8 @@ This is a simple Flask API to wrap the pycritic scrapper in
 
 start up the api with ```python main.py```
 
+The app is also hosted with vercel at https://pycritic-api.vercel.app
+
 make requests with your app or api tester (I use Insomnia) and hit an endpoint!
 
 options are:
