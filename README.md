@@ -7,8 +7,8 @@ start up the api with ```python app.py```
 
 make requests with your app or api tester (I use Insomnia) and hit an endpoint!
 options are: 
-- /game/<platform>/<name>
-- /game/metaurl/<url>
+- '/game/<platform>/<name>'
+- '/game/metaurl/<url>'
 
 This API will return a json string with properties: name, release date, category, metacritic score, user score, and description
 
