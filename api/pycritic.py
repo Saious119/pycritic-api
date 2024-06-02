@@ -1,7 +1,5 @@
-from asyncore import write
 from builtins import object
 from builtins import str
-from distutils.file_util import write_file
 import requests
 import bs4
 
