@@ -20,7 +20,7 @@ class Query(object):
     def __init__(self, category, terms):
         self.category = category
         self.terms = terms
-        self.base_url = "http://www.metacritic.com/search/"
+        self.base_url = "http://www.metacritic.com/"
         partial_url = {Category.ALL: self.base_url + "all",
                        Category.MOVIE: self.base_url + "movie",
                        Category.GAME: self.base_url + "game",
@@ -64,7 +64,7 @@ class Response(object):
 class Browser(object):
     def get(self, url):
         s = requests.Session()
-        s.headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36'
+        s.headers['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
         request = s.get(url)
         response = Response(request.status_code, request.content)
         return response

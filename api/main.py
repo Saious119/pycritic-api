@@ -11,9 +11,9 @@ app = Flask(__name__)
 def home():
     return "Hello, Fuckers"
 
-@app.route('/game/<platform>/<name>')
-def get_metacritic(platform, name):
-    url = "https://www.metacritic.com/game/"+platform+"/"+name
+@app.route('/game/<name>')
+def get_metacritic(name):
+    url = "https://www.metacritic.com/game/halo-4/" #+name
     scraper = pycritic.Scraper()
     game = scraper.get(url)
     jsonData = json.dumps(game.__dict__)
